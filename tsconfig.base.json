@@ -1,0 +1,11 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "paths": {
+      "@basil/atoms": ["packages/atoms/src/index.ts"]
+    }
+  }
+}
