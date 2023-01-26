@@ -5,7 +5,8 @@
     "module": "commonjs",
     "skipLibCheck": true,
     "paths": {
-      "@basil/atoms": ["packages/atoms/src/index.ts"]
+      "@basil/atoms": ["packages/atoms/src/index.ts"],
+      "@basil/molecules": ["packages/molecules/src/index.ts"]
     }
   }
 }
