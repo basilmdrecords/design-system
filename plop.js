@@ -16,37 +16,37 @@ module.exports = function (plop) {
         actions: [
             {
                 type: `add`,
-                path: `packages/design-system/{{scope}}/src/{{pascalCase name}}/{{pascalCase name}}.tsx`,
+                path: `packages/design-system/src/{{scope}}/{{pascalCase name}}/{{pascalCase name}}.tsx`,
                 templateFile: `plop-templates/Component.tsx.hbs`,
             },
             {
                 type: `add`,
-                path: `packages/design-system/{{scope}}/src/{{pascalCase name}}/{{pascalCase name}}.module.scss`,
+                path: `packages/design-system/src/{{scope}}/{{pascalCase name}}/{{pascalCase name}}.module.scss`,
                 templateFile: `plop-templates/Component.module.scss.hbs`,
             },
             {
                 type: `add`,
-                path: `packages/design-system/{{scope}}/src/{{pascalCase name}}/index.ts`,
+                path: `packages/design-system/src/{{scope}}/{{pascalCase name}}/index.ts`,
                 templateFile: `plop-templates/index.ts.hbs`,
             },
             {
                 type: `add`,
-                path: `packages/design-system/{{scope}}/src/{{pascalCase name}}/{{pascalCase name}}.stories.tsx`,
+                path: `packages/design-system/src/{{scope}}/{{pascalCase name}}/{{pascalCase name}}.stories.tsx`,
                 templateFile: `plop-templates/Component.stories.tsx.hbs`,
             },
             {
                 type: `add`,
-                path: `packages/design-system/{{scope}}/src/{{pascalCase name}}/{{pascalCase name}}.stories.mdx`,
+                path: `packages/design-system/src/{{scope}}/{{pascalCase name}}/{{pascalCase name}}.stories.mdx`,
                 templateFile: `plop-templates/Component.stories.mdx.hbs`,
             },
             {
                 type: `add`,
-                path: `packages/design-system/{{scope}}/src/{{pascalCase name}}/{{pascalCase name}}.spec.tsx`,
+                path: `packages/design-system/src/{{scope}}/{{pascalCase name}}/{{pascalCase name}}.spec.tsx`,
                 templateFile: `plop-templates/Component.spec.tsx.hbs`,
             },
             {
                 type: `add`,
-                path: `packages/design-system/{{scope}}/src/{{pascalCase name}}/{{pascalCase name}}.interface.ts`,
+                path: `packages/design-system/src/{{scope}}/{{pascalCase name}}/{{pascalCase name}}.interface.ts`,
                 templateFile: `plop-templates/Component.interface.ts.hbs`,
             },
         ],

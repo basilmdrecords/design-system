@@ -32,6 +32,9 @@
     },
     "test": {
       "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+    },
+    "build": {
+      "dependsOn": ["^build"]
     }
   }
 }

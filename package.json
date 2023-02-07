@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@changesets/cli": "^2.26.0",
     "core-js": "^3.6.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -24,6 +25,7 @@
     "@nrwl/storybook": "15.4.5",
     "@nrwl/web": "15.4.5",
     "@rollup/plugin-url": "^7.0.0",
+    "@storybook/addon-docs": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/builder-webpack5": "^6.5.15",
     "@storybook/core-server": "^6.5.15",

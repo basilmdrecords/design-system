@@ -5,12 +5,8 @@
     "module": "commonjs",
     "skipLibCheck": true,
     "paths": {
-      "@basil/atoms": ["packages/design-system/atoms/src/index.ts"],
-      "@basil/base": ["packages/design-system/base/src/index.ts"],
-      "@basil/molecules": ["packages/design-system/molecules/src/index.ts"],
-      "@basil/organisms": ["packages/design-system/organisms/src/index.ts"],
-      "@basil/storybook": ["packages/storybook/src/index.ts"],
-      "@basil/templates": ["packages/design-system/templates/src/index.ts"]
+      "@basil/design-system": ["packages/design-system/src/index.ts"],
+      "@basil/navigation": ["packages/navigation/src/index.ts"]
     }
   }
 }
