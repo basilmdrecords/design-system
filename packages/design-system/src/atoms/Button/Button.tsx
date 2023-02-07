@@ -2,12 +2,9 @@ import React from 'react';
 import styled from './Button.module.scss';
 import { ButtonProps } from './Button.interface';
 
-function Button(props: ButtonProps) {
-  
+function Button({ children }: ButtonProps) {
   return (
-    <div className={ styled.button }>
-        Button component
-    </div>
+    <button className={styled.button}>{children}</button>
   );
 };
 
