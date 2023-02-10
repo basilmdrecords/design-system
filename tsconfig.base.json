@@ -4,6 +4,7 @@
     "target": "es2016",
     "module": "commonjs",
     "skipLibCheck": true,
+    "baseUrl": ".",
     "paths": {
       "@basil/design-system": ["packages/design-system/src/index.ts"],
       "@basil/navigation": ["packages/navigation/src/index.ts"]
