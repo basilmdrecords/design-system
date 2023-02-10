@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from './Button.module.scss';
-import { ButtonProps, TYPE } from './Button.interface';
+import { ButtonProps, ButtonType } from './Button.interface';
 
-function Button({ children, type = TYPE.PRIMARY }: ButtonProps) {
+function Button({ children, buttonType = ButtonType.RoyalBlue, ...props }: ButtonProps) {
   return (
-    <button className={`${styled.button} ${styled['button--'+ type]}`}>{children}</button>
+    <button
+      className={`${styled.button} ${styled[buttonType]}`}
+      {...props}
+    >
+      <div className={styled['button-content']}>{children}</div>
+    </button>
   );
 };
 
