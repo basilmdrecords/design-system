@@ -4,7 +4,7 @@ const Navigation = () => {
     return (
         <div>
             This Is Navigation
-            <Button type='outline'>Button</Button>
+            <Button>Button</Button>
         </div>
     )
 }

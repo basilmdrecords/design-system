@@ -1,5 +1,12 @@
 # @basil/design-system
 
+## 0.3.0
+
+### Minor Changes
+
+- change type to optional
+- add type styling
+
 ## 0.2.0
 
 ### Minor Changes

@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from './Button.module.scss';
-import { ButtonProps } from './Button.interface';
+import { ButtonProps, TYPE } from './Button.interface';
 
-function Button({ children, type }: ButtonProps) {
+function Button({ children, type = TYPE.PRIMARY }: ButtonProps) {
   return (
-    <button className={styled.button}>{children}</button>
+    <button className={`${styled.button} ${styled['button--'+ type]}`}>{children}</button>
   );
 };
 
