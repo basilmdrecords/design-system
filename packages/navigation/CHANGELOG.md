@@ -4,4 +4,4 @@
 
 ### Minor Changes
 
-- create navigation
+- update to avoid error

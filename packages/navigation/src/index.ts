@@ -1,1 +1,1 @@
-export * from './lib/Navigation';
+export * from './Navigation';
