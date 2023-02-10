@@ -1,0 +1,70 @@
+import { Meta, Preview, Story, Props } from '@storybook/addon-docs/blocks';
+import { MDXProvider } from '@mdx-js/react';
+import Badge from './Badge';
+import { Template, args, helperComponentStyle } from './Badge.stories.tsx';
+
+<Meta
+  title="Atoms/Badge"
+  component={ Badge }
+/>
+
+# Badge
+
+This is brief description of Badge
+
+### Badge Component
+
+Badge component below will dynamically update following input from canvas control
+
+<Story name="Badge" args={args}>
+  {Template.bind({})}
+</Story>
+
+### Badge Properties
+
+<Props of={ Badge }/>
+
+### Default Badge
+
+<Preview>
+  <Badge/>
+</Preview>
+
+### Badge Size
+
+<Preview>
+  <Badge size='xs'/>
+  <Badge size='sm'/>
+  <Badge size='md'/>
+  <Badge size='lg'/>
+</Preview>
+
+### Badge Color
+
+<Preview>
+  <Badge color='red'/>
+  <Badge color='blue'/>
+</Preview>
+
+### Bagde Color with Info
+
+<Preview>
+  <Badge info='13'/>
+</Preview>
+
+### Badge Position
+badge parent component position must be explicitly set to relative to work properly
+
+<Preview>
+  <div style={{ display: 'flex', gap: '16px' }}>
+    <div style={helperComponentStyle}>
+      <Badge position='relative' size='sm' />
+    </div>
+    <div style={helperComponentStyle}>
+      <Badge position='top-left' size='sm' />
+    </div>
+    <div style={helperComponentStyle}>
+      <Badge position='top-right' size='sm' />
+    </div>
+  </div>
+</Preview>

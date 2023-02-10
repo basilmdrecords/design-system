@@ -1,5 +1,12 @@
 # @basil/design-system
 
+## 0.4.0
+
+### Minor Changes
+
+- - update button matching fe-essential
+  - add badge component
+
 ## 0.3.0
 
 ### Minor Changes
