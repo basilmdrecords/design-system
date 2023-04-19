@@ -1,0 +1,47 @@
+import { Meta, Preview, Story, Props } from '@storybook/addon-docs/blocks';
+import Tooltip from './Tooltip';
+import { Template, args } from './Tooltip.stories.tsx';
+
+<Meta
+  title="Components/Tooltip"
+  component={ Tooltip }
+/>
+
+# Tooltip
+
+brief description of the component
+
+<Story name="Tooltip" args={args}>
+  {Template.bind({})}
+</Story>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Tooltip Properties
+
+<Props story="Tooltip" />
+
+## Default Tooltip
+
+<Preview>
+  <Tooltip info='this is tooltip'>
+    <p>hover to see tooltip</p>
+  </Tooltip>
+</Preview>
+
+## Tooltip Stories
+
+<br/>
+
+### Tooltip Placement
+
+<Preview>
+  <div style={{display: 'flex', justifyContent: 'center'}}>
+    <Tooltip info='tooltip on the left' placement='left' >
+      <p>left tooltip</p>
+    </Tooltip>
+  </div>
+</Preview>

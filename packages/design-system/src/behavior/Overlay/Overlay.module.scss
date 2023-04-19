@@ -1,0 +1,71 @@
+@use '../../assets/fonts/font-face' with ($base_url: '../../assets/fonts');
+@use '../../assets/colors';
+
+.trigger {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, Helvetica, san-serif;
+}
+
+.overlay {
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, Helvetica, san-serif;
+}
+
+.arrow,
+.arrow::before {
+  position: absolute;
+  background: inherit;
+  box-shadow: inherit;
+}
+
+.arrow {
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.arrow::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  visibility: visible;
+  background: inherit;
+}
+
+.overlay[data-popper-placement^='top'] > .arrow {
+  bottom: -7px;
+  width: 12px;
+  height: 7px;
+  &::before {
+    transform: translate(20%, -50%) rotate(45deg);
+  }
+}
+
+.overlay[data-popper-placement^='bottom'] > .arrow {
+  top: -7px;
+  width: 12px;
+  height: 7px;
+  &::before {
+    transform: translate(20%, 32%) rotate(45deg);
+  }
+}
+
+.overlay[data-popper-placement^='left'] > .arrow {
+  right: -7px;
+  width: 7px;
+  height: 12px;
+  &::before {
+    transform: translate(-50%, 20%) rotate(45deg);
+  }
+}
+
+.overlay[data-popper-placement^='right'] > .arrow {
+  left: -7px;
+  width: 7px;
+  height: 12px;
+  &::before {
+    transform: translate(32%, 20%) rotate(45deg);
+  }
+}

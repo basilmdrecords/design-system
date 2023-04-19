@@ -6,8 +6,15 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@basil/design-system": ["packages/design-system/src/index.ts"],
-      "@basil/navigation": ["packages/navigation/src/index.ts"]
+      "@basil/design-system": [
+        "packages/design-system/src/index.ts"
+      ],
+      "@basil/linter": [
+        "packages/linter/src/index.ts"
+      ],
+      "@basil/navigation": [
+        "packages/navigation/src/index.ts"
+      ]
     }
   }
 }

@@ -1,0 +1,9 @@
+@use '../../assets/fonts/font-face' with ($base_url: '../../assets/fonts');
+@use '../../assets/colors';
+
+.tooltip {
+    padding: 5px 10px;
+    background: colors.$white00;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px colors.$grey600opacity40;
+}

@@ -1,0 +1,45 @@
+import { Meta, Preview, Story, Props } from '@storybook/addon-docs/blocks';
+import { MDXProvider } from '@mdx-js/react';
+import H3 from './H3';
+import { Template, args } from './H3.stories.tsx';
+
+<Meta
+  title="Typography/H3"
+  component={ H3 }
+/>
+
+<Story name="H3" args={args}>
+  {Template.bind({})}
+</Story>
+
+This is brief description of H3
+
+## H3 Usage
+
+- Navigation
+- Section Headers
+- Button
+- Warning toast text
+- Help text/Tooltip
+- Radio/Checkbox text
+
+## H3 Properties
+
+<Props of={ H3 }/>
+
+## H3 Color Variant
+
+H3 has some color variant that can be used depending on the [usage](#h3-usage)
+
+<Preview>
+  <div style={{display: 'flex', flexDirection: 'column', backgroundColor: '#F1F1F1', padding: '8px 16px', gap: '16px'}}>
+    <H3>Heading Three Grey</H3>
+    <H3 color='disabled'>Heading Three Disabled</H3>
+    <H3 color='ghost'>Heading Three Ghost</H3>
+    <H3 color='green'>Heading Three Green</H3>
+    <H3 color='red'>Heading Three Red</H3>
+    <H3 color='white'>Heading Three White</H3>
+    <H3 color='yellow'>Heading Three Yellow</H3>
+  </div>
+</Preview>
+

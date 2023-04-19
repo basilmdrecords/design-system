@@ -1,0 +1,104 @@
+import { Meta, Preview, Story, Props } from '@storybook/addon-docs/blocks';
+import Badge from './Badge';
+import { Template, args, badgeChildComponent } from './Badge.stories.tsx';
+
+<Meta
+  title="Components/Badge"
+  component={ Badge }
+  argTypes = {{
+    size: {
+      description: 'Badge size options',
+      control: {
+        type: 'select'
+      }
+    },
+    color: {
+      description: 'Badge color options',
+      control: {
+        type: 'select'
+      }
+    },
+    position: {
+      description: 'Badge position relative to the parent',
+      control: {
+        type: 'select'
+      }
+    },
+  }}
+/>
+
+# Badge
+
+Badge is a component that show update that happen in its child component
+
+<Story name="Badge" args={args}>
+  {Template.bind({})}
+</Story>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Badge Properties
+
+<Props story="Badge"/>
+
+## Default Badge
+
+<Preview>
+  <Badge>
+    <div style={badgeChildComponent} />
+  </Badge>
+</Preview>
+
+## Bagde Stories
+
+<br/>
+
+### Badge Size
+
+<Preview>
+  <Badge size='xs'>
+    <div style={badgeChildComponent} />
+  </Badge>
+  <Badge size='sm'>
+    <div style={badgeChildComponent} />
+  </Badge>
+  <Badge size='md'>
+    <div style={badgeChildComponent} />
+  </Badge>
+  <Badge size='lg'>
+    <div style={badgeChildComponent} />
+  </Badge>
+</Preview>
+
+### Badge Color
+
+<Preview>
+  <Badge color='red'>
+    <div style={badgeChildComponent} />
+  </Badge>
+  <Badge color='blue'>
+    <div style={badgeChildComponent} />
+  </Badge>
+</Preview>
+
+### Bagde with Info
+
+<Preview>
+  <Badge badgeContent={45}>
+    <div style={badgeChildComponent} />
+  </Badge>
+</Preview>
+
+### Badge Position
+
+<Preview>
+  <Badge position='top-left'>
+    <div style={badgeChildComponent} />
+  </Badge>
+  <Badge position='top-right'>
+    <div style={badgeChildComponent} />
+  </Badge>
+</Preview>

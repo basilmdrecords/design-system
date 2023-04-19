@@ -1,0 +1,69 @@
+import { Meta, Preview, Story, Props } from '@storybook/addon-docs/blocks';
+import { MDXProvider } from '@mdx-js/react';
+import Button from './Button';
+import { Badge } from '../Badge';
+import { Template, args } from './Button.stories.tsx';
+
+<Meta
+  title="Components/Button"
+  component={ Button }
+/>
+
+# Button
+
+This is brief description of Button
+
+<Story name="Button" args={args}>
+  {Template.bind({})}
+</Story>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Button Properties
+
+<Props story="Button" />
+
+## Default Button
+
+<Preview>
+  <Button>Default Button</Button>
+</Preview>
+
+## Button Type
+
+<Preview>
+  <Button buttonType='royalBlue'>Royal Blue</Button>
+  <Button buttonType='ceruleanBlue'>Cerulean Blue</Button>
+  <Button buttonType='turquoise'>Turquoise</Button>
+  <Button buttonType='limeGreen'>Lime Green</Button>
+  <Button buttonType='purple'>Purple</Button>
+  <Button buttonType='red'>Red</Button>
+</Preview>
+
+## Disabled Button Type
+
+<Preview>
+  <Button buttonType='royalBlue' disabled >Royal Blue</Button>
+  <Button buttonType='ceruleanBlue' disabled >Cerulean Blue</Button>
+  <Button buttonType='turquoise' disabled >Turquoise</Button>
+  <Button buttonType='limeGreen' disabled >Lime Green</Button>
+  <Button buttonType='purple' disabled >Purple</Button>
+  <Button buttonType='red' disabled >Red</Button>
+</Preview>
+
+## Button With Custom Child
+
+<Preview>
+  <Button>
+    <Badge color='red' size='sm' info='7' />
+    <span>Button with Badge</span>
+  </Button>
+  <Button>
+    <Badge color='red' size='sm' info='7' />
+    <span>Button with multiple child</span>
+    <Badge color='red' size='md' />
+  </Button>
+</Preview>

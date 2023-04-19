@@ -1,5 +1,4 @@
 import { Meta, Preview, Story, Props } from '@storybook/addon-docs/blocks';
-import { MDXProvider } from '@mdx-js/react';
 import {{pascalCase name}} from './{{pascalCase name}}';
 import { Template, args } from './{{pascalCase name}}.stories.tsx';
 
@@ -10,22 +9,29 @@ import { Template, args } from './{{pascalCase name}}.stories.tsx';
 
 # {{pascalCase name}}
 
-This is brief description of {{pascalCase name}}
-
-### {{pascalCase name}} Component
-
-{{pascalCase name}} component below will dynamically update following input from canvas control
+brief description of the component
 
 <Story name="{{pascalCase name}}" args={args}>
   {Template.bind({})}
 </Story>
 
-### {{pascalCase name}} Properties
+<br/>
+<br/>
+<br/>
+<br/>
 
-<Props of={ {{pascalCase name}} }/>
+## {{pascalCase name}} Properties
 
-### Default {{pascalCase name}}
+<Props story="{{pascalCase name}}" />
+
+## Default {{pascalCase name}}
 
 <Preview>
   <{{pascalCase name}} />
 </Preview>
+
+## {{pascalCase name}} Stories
+
+<br/>
+
+### {{pascalCase name}} Story One

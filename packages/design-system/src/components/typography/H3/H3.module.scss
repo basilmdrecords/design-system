@@ -1,0 +1,25 @@
+@use '../../../assets/fonts/font-face' with ($base_url: '../../../assets/fonts');
+@use '../../../assets/colors';
+
+$colors: (
+  grey: colors.$grey650,
+  white: colors.$white00,
+  disabled: colors.$grey650opacity40,
+  ghost: colors.$grey650opacity60,
+  red: colors.$red100,
+  yellow: colors.$yellow500,
+  green: colors.$green100,
+);
+
+@each $H3Color, $color in $colors {
+  .#{$H3Color} {
+    color: $color;
+  }
+}
+
+h3 {
+  font-family: 'Open Sans', Arial, Helvetica, san-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0px;
+}

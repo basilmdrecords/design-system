@@ -4,8 +4,8 @@
 
 ### Minor Changes
 
-- - update button matching fe-essential
-  - add badge component
+- update button matching fe-essential
+- add badge component
 
 ## 0.3.0
 
